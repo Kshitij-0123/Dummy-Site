@@ -1,0 +1,19 @@
+{
+  "name": "nasa-dummy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-client": "npm install --prefix client",
+    "install-server": "npm install --prefix server",
+    "install-all": "npm run install-server && npm run install-client",
+    "start-client": "npm start --prefix client",
+    "start-server": "npm run watch --prefix server",
+    "start-server-client": "npm run start-server & npm run start-client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "start": "npm start --prefix server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kshitij0123",
+  "license": "ISC"
+}
